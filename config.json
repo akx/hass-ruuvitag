@@ -30,7 +30,8 @@
                 "acceleration": "bool",
                 "accelerationX": "bool",
                 "accelerationY": "bool",
-                "accelerationZ": "bool"
+                "accelerationZ": "bool",
+                "interval": "int?"
             }
         ]
     }

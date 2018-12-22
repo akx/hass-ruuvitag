@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "js",
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "strict": true,
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

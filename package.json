@@ -1,0 +1,28 @@
+{
+  "name": "hassio-ruuvitag",
+  "version": "0.1.1",
+  "main": "app.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=html",
+    "tidy": "tslint --fix *.ts lib/*.ts test/*.ts && prettier --write *.ts lib/*.ts test/*.ts"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "node-ruuvitag": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/node-fetch": "^2.1.4",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "printWidth": 90
+  }
+}

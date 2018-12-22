@@ -1,0 +1,37 @@
+{
+    "name": "Ruuvitag",
+    "version": "0.1.1",
+    "slug": "ruuvitag",
+    "description": "Atmospheric information from Ruuvitag BLE sensors",
+    "startup": "application",
+    "boot": "auto",
+    "privileged": [
+        "SYS_RAWIO"
+    ],
+    "homeassistant_api": true,
+    "host_network": true,
+    "options": {
+        "interval": 30,
+        "debug": 0,
+        "tags": []
+    },
+    "schema": {
+        "interval": "int",
+        "debug": "int?",
+        "tags": [
+            {
+                "id": "str",
+                "name": "str",
+                "enabled": "bool",
+                "temperature": "bool",
+                "pressure": "bool",
+                "humidity": "bool",
+                "battery": "bool",
+                "acceleration": "bool",
+                "accelerationX": "bool",
+                "accelerationY": "bool",
+                "accelerationZ": "bool"
+            }
+        ]
+    }
+}

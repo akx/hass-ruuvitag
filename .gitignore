@@ -1,0 +1,4 @@
+*.log
+/js
+coverage
+node_modules

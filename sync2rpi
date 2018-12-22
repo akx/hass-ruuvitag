@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -avP --checksum --exclude=node_modules --exclude=.git --exclude=coverage . /Volumes/addons/ruuvitag/

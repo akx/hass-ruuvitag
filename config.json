@@ -1,6 +1,6 @@
 {
     "name": "Ruuvitag",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "slug": "ruuvitag",
     "description": "Atmospheric information from Ruuvitag BLE sensors",
     "startup": "application",

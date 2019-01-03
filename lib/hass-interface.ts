@@ -78,7 +78,7 @@ export function createTagDataPayloads(
     }
   }
 
-  addSimpleNumber("temperature", "C", "temperature");
+  addSimpleNumber("temperature", "°C", "temperature");
   addSimpleNumber("pressure", "hPa", "pressure", 1 / 100);
   addSimpleNumber("humidity", "%", "humidity");
   addSimpleNumber("battery", "mV");

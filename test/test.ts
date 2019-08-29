@@ -6,7 +6,7 @@ import { getBaseConfig } from "../lib/config";
 import Manager from "../lib/Manager";
 import { Tag } from "../lib/types";
 
-const fetch: jest.MockInstance<any> = (_fetch as unknown) as jest.MockInstance<any>;
+const fetch: jest.MockInstance<any, any[]> = (_fetch as unknown) as jest.MockInstance<any, any[]>;
 const { Response } = require.requireActual("node-fetch");
 
 const data = {

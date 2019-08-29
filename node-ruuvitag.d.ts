@@ -1,1 +1,1 @@
-declare module "node-ruuvitag";
+declare module "ruuvidriver";

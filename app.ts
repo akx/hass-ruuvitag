@@ -1,4 +1,4 @@
-import ruuvi from "node-ruuvitag";
+import ruuvidriver from "ruuvidriver";
 import packageInfo from "./package.json";
 
 import { readConfig } from "./lib/config";
@@ -11,7 +11,8 @@ const config = readConfig(process.env.OPTIONS_JSON_PATH || "/data/options.json")
 if (!config.hassToken) {
   console.warn("Config: no HASSIO_TOKEN, will probably not be able to post data");
 }
-
+ruuvidriver.init();
+const ruuvi = ruuvidriver.getRuuvi();
 const manager = new Manager(config);
 ruuvi.on("found", (tag: Tag) => {
   tag.on("updated", (data: TagData) => manager.handleRuuviUpdate(tag, data));

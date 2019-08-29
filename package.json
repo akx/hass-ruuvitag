@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "node-fetch": "^2.6.0",
-    "node-ruuvitag": "^4.1.0"
+    "ruuvidriver": "https://github.com/akx/ruuvidriver/#v0.2.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
@@ -24,5 +24,8 @@
   "prettier": {
     "trailingComma": "all",
     "printWidth": 90
+  },
+  "resolutions": {
+    "ruuvidriver/@abandonware/noble/@abandonware/bluetooth-hci-socket": "https://github.com/akx/node-bluetooth-hci-socket.git#node-12"
   }
 }

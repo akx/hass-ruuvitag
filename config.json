@@ -1,6 +1,6 @@
 {
     "name": "Ruuvitag",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "slug": "ruuvitag",
     "description": "Atmospheric information from Ruuvitag BLE sensors",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],

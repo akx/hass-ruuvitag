@@ -1,6 +1,6 @@
 {
   "name": "hassio-ruuvitag",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "app.ts",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "node-fetch": "^2.6.0",
-    "ruuvidriver": "https://github.com/akx/ruuvidriver/#v0.2.1"
+    "ruuvidriver": "https://github.com/akx/ruuvidriver/#v0.3.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
@@ -24,8 +24,5 @@
   "prettier": {
     "trailingComma": "all",
     "printWidth": 90
-  },
-  "resolutions": {
-    "ruuvidriver/@abandonware/noble/@abandonware/bluetooth-hci-socket": "https://github.com/akx/node-bluetooth-hci-socket.git#node-12"
   }
 }

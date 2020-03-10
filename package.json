@@ -24,5 +24,8 @@
   "prettier": {
     "trailingComma": "all",
     "printWidth": 90
+  },
+  "resolutions": {
+    "ruuvidriver/@abandonware/noble": "https://github.com/akx/noble#hass-ruuvitag-experimental"
   }
 }

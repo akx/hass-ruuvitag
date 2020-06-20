@@ -3,7 +3,7 @@ FROM $BUILD_FROM as build
 ENV LANG C.UTF-8
 # this line is shared with the actual runtime container!
 RUN apk add --no-cache nodejs libusb-dev bluez-dev linux-headers eudev-dev
-RUN apk add --no-cache python build-base yarn git
+RUN apk add --no-cache python3 build-base yarn git
 RUN yarn global add node-gyp
 COPY . /app
 WORKDIR /app

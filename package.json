@@ -8,7 +8,7 @@
     "tidy": "tslint --fix *.ts lib/*.ts test/*.ts && prettier --write *.ts lib/*.ts test/*.ts"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "ruuvidriver": "https://github.com/akx/ruuvidriver/#v0.3.0"
   },
   "devDependencies": {

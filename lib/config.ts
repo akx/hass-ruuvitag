@@ -5,8 +5,8 @@ export function getBaseConfig(): Config {
     interval: 30,
     debug: 0,
     tags: [],
-    hassHost: process.env.HASS_HOST || "http://hassio/homeassistant/",
-    hassToken: process.env.HASSIO_TOKEN,
+    supervisorRootUrl: "http://supervisor/core/",
+    supervisorToken: process.env.SUPERVISOR_TOKEN,
   };
 }
 

@@ -9,6 +9,7 @@
     "privileged": [
         "SYS_RAWIO"
     ],
+    "hassio_role": "homeassistant",
     "homeassistant_api": true,
     "host_network": true,
     "options": {

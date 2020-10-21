@@ -23,7 +23,7 @@ function doDatumRequest(config: Config, datum: Datum): Promise<WrappedResponseOr
     body: JSON.stringify(datum.payload),
     headers: {
       "Content-Type": "application/json",
-      "X-HA-Access": config.hassToken || "1",
+      "Authorization": `Bearer ${config.supervisorToken}`,
     },
   })
     .then(response => ({ datum, response }))
@@ -71,7 +71,7 @@ export function createTagDataPayloads(
       }
 
       postData.push({
-        url: `${config.hassHost}api/states/sensor.${tagConfig.name}_${key}`,
+        url: `${config.supervisorRootUrl}api/states/sensor.${tagConfig.name}_${key}`,
         payload,
       });
       return true;

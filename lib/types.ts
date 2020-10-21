@@ -17,8 +17,8 @@ export interface Config {
   interval: number;
   debug: 0;
   tags: TagConfig[];
-  hassHost: string;
-  hassToken?: string;
+  supervisorRootUrl: string;
+  supervisorToken?: string;
 }
 
 export interface Tag {

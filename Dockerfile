@@ -5,9 +5,10 @@ ENV LANG C.UTF-8
 RUN apk add --no-cache nodejs libusb-dev bluez-dev linux-headers eudev-dev
 RUN apk add --no-cache python3 build-base yarn git
 RUN yarn global add node-gyp
-COPY . /app
+COPY package.json yarn.lock /app/
 WORKDIR /app
 RUN yarn
+COPY . /app
 RUN ./node_modules/.bin/tsc
 
 FROM $BUILD_FROM

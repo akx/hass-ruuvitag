@@ -14,6 +14,7 @@ export function readConfig(path?: string): Config {
   const config = getBaseConfig();
   if (path) {
     try {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
       Object.assign(config, require(path));
     } catch (e) {
       console.warn("Unable to read config: " + e);

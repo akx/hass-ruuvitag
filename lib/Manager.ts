@@ -12,7 +12,7 @@ export default class Manager {
     this.config = config;
   }
 
-  public handleRuuviUpdate = (tag: Tag, data: TagData) => {
+  public handleRuuviUpdate = (tag: Tag, data: TagData): void => {
     const tagConfig = this.config.tags.find(c => c.id === tag.id);
     if (!tagConfig && !this.tagDatas[tag.id]) {
       presentUnconfiguredTag(tag, data);

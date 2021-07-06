@@ -3,12 +3,12 @@ import { Config, Tag, TagConfig, TagData } from "./types";
 
 interface Datum {
   url: string;
-  payload: object;
+  payload: unknown;
 }
 
 interface HassStateData {
   state: number;
-  attributes: { [key: string]: any };
+  attributes: Record<string, unknown>;
 }
 
 interface WrappedResponseOrError {
@@ -54,7 +54,7 @@ export function createTagDataPayloads(
     key: keyof TagConfig & keyof TagData,
     unit?: string,
     deviceClass?: string,
-    scalingFactor: number = 1,
+    scalingFactor = 1,
   ) {
     if (!tagConfig[key]) {
       // not enabled?
@@ -89,7 +89,7 @@ export function createTagDataPayloads(
   return postData;
 }
 
-export function postTag(config: Config, tag: Tag, tagConfig: TagConfig, data: TagData) {
+export function postTag(config: Config, tag: Tag, tagConfig: TagConfig, data: TagData): Promise<unknown> {
   const postData = createTagDataPayloads(config, tag, tagConfig, data);
   if (config.debug & 1) {
     console.info(postData);

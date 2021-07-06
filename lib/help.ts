@@ -1,6 +1,6 @@
 import { Tag, TagConfig, TagData } from "./types";
 
-export function presentUnconfiguredTag(tag: Tag, data: TagData) {
+export function presentUnconfiguredTag(tag: Tag, data: TagData): void {
   const exampleConfig: TagConfig = {
     id: tag.id,
     name: "some-name",

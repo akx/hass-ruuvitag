@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "ruuvidriver": "https://github.com/akx/ruuvidriver/#v0.3.0"
   },
   "devDependencies": {

@@ -1,6 +1,12 @@
 hass.io ruuvitag addon
 ======================
 
+---
+
+> :point_right: :warning: This repository is archived in favor of [the native Ruuvitag BLE integration in Home Assistant 2022.12](https://www.home-assistant.io/integrations/ruuvitag_ble/), also written by yours truly.
+
+---
+
 > :point_right: If you are not using Hass.io, you may want to look at [Ruuvidriver](https://github.com/akx/ruuvidriver) instead.
 
 This [Hass.io](https://www.home-assistant.io/hassio/) platform addon reads data from [RuuviTag](https://ruuvi.com/) weather station BLE tags and posts it to your Home Assistant instance.
